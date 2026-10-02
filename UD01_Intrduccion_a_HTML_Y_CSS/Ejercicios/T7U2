@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla horario clase</title>
+    </head>
+    <body>
+        <table border="1">
+            <thead></thead>
+            <tbody>
+                <tr>
+                    <td>fila 1</td>
+                </tr>
+                <tr> fila 2, columna 1</tr>
+                <tr>fila 2, columna 2</tr>
+                <tr>fila 2, columna 3 </tr>
+            </tbody>
+        </table>
