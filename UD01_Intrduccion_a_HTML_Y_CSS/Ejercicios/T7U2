@@ -24,27 +24,26 @@
             <!--Filas que formen parte del cuerpo de la tabla-->
             <tr>
                 <th scope="row">8:30 <br> 9:20</th>
-                <td>BD <br> Erica <br> Aula 1º DAM</td>
+                <td rowspan="2">BD <br> Erica <br> Aula 1º DAM</td>
                 <td>ContDes <br> Cristina <br> Aula 1º DAM</td>
                 <td>IngProf <br> Cristina <br> Aula 1º DAM</td>
-                <td>BD <br> Erica <br> Aula 1º DAM</td>
-                <td>LIMA <br> Janeiro <br> Aula 1º DAM</td>
+                <td rowspan="2">BD <br> Erica <br> Aula 1º DAM</td>
+                <td rowspan="2">LIMA <br> Janeiro <br> Aula 1º DAM</td>
             </tr>
             <tr>
                <th scope="row">9:20 <br> 10:10</th> 
-               <td>Primer dato de la fila 2</td>
                <td>LIMA <br> Janeiro <br> Aula 1º DAM</td>
                <td>ContDes <br> Cristina <br> Aula 1º DAM</td>
             </tr>
             <tr>
                <th scope="row"> </th> 
-               <td>Recreo</td>
+               <td colspan="5">Recreo</td>
             </tr>
             <tr>
                <th scope="row">10:30<br>11:20</th> 
                <td>itPerEmpl <br> Iria V. <br> Aula 1º DAM</td>
                <td>IngProf <br> Cristina <br> Aula 1º DAM</td>
-               <td>SisrInf <br> Lucas <br> Aula 1º DAM</td>
+               <td rowspan="2">SisrInf <br> Lucas <br> Aula 1º DAM</td>
                <td>LIMA <br> Janeiro <br> Aula 1º DAM</td>
                <td>Prog <br> Toni <br> Aula 1º DAM</td>
             </tr>
@@ -52,13 +51,12 @@
                <th scope="row">11:20<br>12:10</th> 
                <td>ContDes <br> Cristina <br> Aula 1º DAM</td>
                <td>BD <br> Erica <br> Aula 1º DAM</td>
-               <td>SisrInf <br> Lucas <br> Aula 1º DAM</td>
                <td>SustAplicSistProd <br> Iria V. <br> Aula 1º DAM</td>
                <td>Prog <br> Toni <br> Aula 1º DAM</td>
             </tr>
              <tr>
                <th scope="row"> </th> 
-               <td>Recreo</td>
+               <td colspan="5">Recreo</td>
             </tr>
              <tr>
                <th scope="row">12:30<br>13:20</th> 
@@ -70,14 +68,28 @@
             </tr>
             <tr>
                <th scope="row">14:10 <br> 14:50</th> 
-               <td>Mediodía</td>
+               <td colspan="5">Mediodía</td>
             </tr>
+            <tr>
             <th scope="row">14:50<br>15:40</th> 
-            <td>Prog <br> Toni <br> Aula 1º DAM</td>
+            <td rowspan="3">Prog <br> Toni <br> Aula 1º DAM</td>
             <td></td>
-             <td>itPerEmpl <br> Iria V. <br> Aula 1º DAM</td>
-             <td></td>
-             <td></td>
+            <td rowspan="3">itPerEmpl <br> Iria V. <br> Aula 1º DAM</td>
+            <td></td>
+            <td></td>
+            </tr>
+            <tr>
+            <th scope="row">15:40<br>16:30</th> 
+            <td></td>
+            <td></td>
+            <td></td>
+            </tr>
+            <tr>
+            <th scope="row">16:30<br>17:20</th> 
+            <td></td>
+            <td></td>
+            <td></td>
+            </tr>
         </tbody>
         
     </table>
