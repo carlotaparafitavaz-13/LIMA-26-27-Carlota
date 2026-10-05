@@ -3,17 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla horario clase</title>
-    </head>
-    <body>
-        <table border="1">
-            <thead></thead>
-            <tbody>
-                <tr>
-                    <td>fila 1</td>
-                </tr>
-                <tr> fila 2, columna 1</tr>
-                <tr>fila 2, columna 2</tr>
-                <tr>fila 2, columna 3 </tr>
-            </tbody>
-        </table>
+    <title>Horario de clase</title>
+</head>
+<body>
+    <table border="1">
+        <caption>Horario clase</caption>
+        <thead>
+            <!--Filas que forman parte del encabezado de la tabla--> 
+        </thead>
+        <tr>
+            <!--Tr es Table Row-->
+            <th scope="col"></th>
+            <th scope="col">Lunes</th>
+            <th scope="col">Martes</th>
+            <th scope="col">Miercoles</th>
+            <th scope="col">Jueves</th>
+            <th scope="col">Viernes</th>
+        </tr>
+        <tbody>
+            <!--Filas que formen parte del cuerpo de la tabla-->
+            <tr>
+                <th scope="row">8:30 <br> 9:20</th>
+                <td>BD <br> Erica <br> Aula 1º DAM</td>
+                <td>ContDes <br> Cristina <br> Aula 1º DAM</td>
+                <td>IngProf <br> Cristina <br> Aula 1º DAM</td>
+                <td>BD <br> Erica <br> Aula 1º DAM</td>
+                <td>LIMA <br> Janeiro <br> Aula 1º DAM</td>
+            </tr>
+            <tr>
+               <th scope="row">9:20 <br> 10:10</th> 
+               <td>Primer dato de la fila 2</td>
+               <td>LIMA <br> Janeiro <br> Aula 1º DAM</td>
+               <td>ContDes <br> Cristina <br> Aula 1º DAM</td>
+            </tr>
+            <tr>
+               <th scope="row"> </th> 
+               <td>Recreo</td>
+            </tr>
+            <tr>
+               <th scope="row">10:30<br>11:20</th> 
+               <td>itPerEmpl <br> Iria V. <br> Aula 1º DAM</td>
+               <td>IngProf <br> Cristina <br> Aula 1º DAM</td>
+               <td>SisrInf <br> Lucas <br> Aula 1º DAM</td>
+               <td>LIMA <br> Janeiro <br> Aula 1º DAM</td>
+               <td>Prog <br> Toni <br> Aula 1º DAM</td>
+            </tr>
+            <tr>
+               <th scope="row">11:20<br>12:10</th> 
+               <td>ContDes <br> Cristina <br> Aula 1º DAM</td>
+               <td>BD <br> Erica <br> Aula 1º DAM</td>
+               <td>SisrInf <br> Lucas <br> Aula 1º DAM</td>
+               <td>SustAplicSistProd <br> Iria V. <br> Aula 1º DAM</td>
+               <td>Prog <br> Toni <br> Aula 1º DAM</td>
+            </tr>
+             <tr>
+               <th scope="row"> </th> 
+               <td>Recreo</td>
+            </tr>
+             <tr>
+               <th scope="row">12:30<br>13:20</th> 
+               <td>SisrInf <br> Lucas <br> Aula 1º DAM</td>
+               <td>Prog <br> Toni <br> Aula 1º DAM</td>
+               <td>BD <br> Erica <br> Aula 1º DAM</td>
+               <td>Prog <br> Toni <br> Aula 1º DAM</td>
+               <td>SisrInf <br> Lucas <br> Aula 1º DAM</td>
+            </tr>
+            <tr>
+               <th scope="row">14:10 <br> 14:50</th> 
+               <td>Mediodía</td>
+            </tr>
+            <th scope="row">14:50<br>15:40</th> 
+            <td>Prog <br> Toni <br> Aula 1º DAM</td>
+            <td></td>
+             <td>itPerEmpl <br> Iria V. <br> Aula 1º DAM</td>
+             <td></td>
+             <td></td>
+        </tbody>
+        
+    </table>
+</body>
+</html>
