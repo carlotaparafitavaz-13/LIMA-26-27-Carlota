@@ -11,6 +11,7 @@
         <thead>
             <!--Filas que forman parte del encabezado de la tabla--> 
         </thead>
+        <thead>
         <tr>
             <!--Tr es Table Row-->
             <th scope="col"></th>
@@ -20,6 +21,7 @@
             <th scope="col">Jueves</th>
             <th scope="col">Viernes</th>
         </tr>
+        </thead>
         <tbody>
             <!--Filas que formen parte del cuerpo de la tabla-->
             <tr>
