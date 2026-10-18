@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario II</title>
+    <meta name=”author” content=”Carlota” />
+	<meta name="description" content=”Tarea 10” />
+	<meta name="keyword" content=”tarea” />
+</head>
+<body>
+
+    <h1>Formulario II</h1>
+    <form action="#" method="get">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required autofocus>
+        <br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br><br>
+
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url"
+            title="Escribe a URL da túa web persoal">
+        <br><br>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data">
+        <br><br>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora">
+        <br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade"
+             min="18" max="65">
+        <br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono">
+        <br><br>
+
+        <label for="cor">Cor favorita:</label>
+        <input type="color" id="cor" name="cor">
+        <br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
