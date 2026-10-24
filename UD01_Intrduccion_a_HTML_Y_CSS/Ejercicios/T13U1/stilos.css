@@ -1,0 +1,21 @@
+fieldset{
+    border: none;
+}
+
+input:valid:required{
+    border: 2px solid darkgreen;
+    background-color: green;
+}
+
+input:invalid:required{
+    border: 2px solid darkred;
+    background-color: red;
+}
+
+input:valid{
+    border: 2px solid green;
+}
+
+input:invalid{
+    border: 2px solid red;
+}
