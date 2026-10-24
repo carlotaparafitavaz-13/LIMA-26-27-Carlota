@@ -1,0 +1,44 @@
+body {
+	font-size: 16px;
+	background-color: palegreen;	
+}
+
+ol > li {
+	list-style-type: square;
+}
+
+ol > ol > ol > li {
+	list-style-type: none;
+}
+
+p::first-letter{
+	font-size: 2em;
+}
+
+h1::first-letter{
+	font-size: 2em;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+ol > li > {
+	display: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:active {
+	color: yellow;
+}
+
+ol li a:hover {
+	background-color: pink;
+}
+
+ol ol li a:hover {
+	background-color: grey;
+}
