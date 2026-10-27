@@ -1,0 +1,186 @@
+<!Doctype HTML>
+ <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="author" content=" Carlota">
+        <tittle> Formulario II </tittle>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <h1> Inscripción a un taller tecnológico</h1>
+        <p> Completa el siguiente formulario para inscribirte</p>
+
+     <form action="#" method="post" entype="mulipart/form-data">
+
+        <fieldset> 
+            <legent> Datos personales </legent>
+            <p>
+                <label for="nombre"> Nombre: </label>
+                <input type="text" id="nombre" name="nombre"
+                minlength="3" maxlength="40"
+                placeholder="Escribe tu nomrbre"
+                required autofocus>
+            </p>
+
+            <p> 
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos"
+                minlength="3" maxlength="40"
+                placeholder="Escribe tus apellidos"
+                required>
+            </p>
+
+            <p>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña"
+                minlength="6" maxlength="20"
+                placeholder="Escribe tu contraseña"
+                required>
+
+            </p>
+
+            <p> 
+                <label for="correo electronico">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo"
+                placeholder="ejemplo@correo.com"
+                required>
+            </p>
+
+            <p> 
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono"
+                pattern="[0-9]{9}" maxlength="9"
+                placeholder="612345678"
+                required>
+            </p>
+
+            <p>
+                <label for="nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="nacimiento" name="nacimiento"
+                min="1950-01-01" max="2010-12-31"
+                required>
+            </p>
+
+            <p>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad"
+                min="14" max="100" required>
+            </p>
+
+            <p> 
+                <label for="buscar"> Buscar un taller: </label>
+                <input type="search" id="buscar" name="buscar"
+                placeholder="Nombre del taller">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Inscripción</legend>
+
+            <p> 
+                <label for="fecha-inscripción"> Fecha de inscripción: </label>
+                <input type="datetime-local" id="fecha-inscripción"
+                name="fecha-inscripcion"
+                min="2026-01-01T00:000"
+                max="2027-12-31T23:59" required>
+            </p>
+
+            <p> 
+                <label for="mes"> Mes preferido: </label>
+                <input type="month" id="mes" name="mes"
+                min="2027-01" max="2027-12">
+            </p>
+
+            <p> 
+                <label for="semana"> Semana preferida:</label>
+                <input type="week" id="semana" name="semana"
+                min="2027-W01" max="2027-W52">
+            </p>
+
+            <p> 
+                <label for="hora"> Hora preferida:</label>
+                <input type="time" id="hora" name="hora"
+                min="09:00" max="20:00">
+            </p>
+
+            <p>Modalidad de asistencia:</p>
+
+            <input type="radio" id="presencial"
+            name="modalidad" value="presencial" required>
+            <label for="presencial">Presencial</label>
+
+            <input type="radio" id="online"
+            name="modalidad" value="online" required>
+            <label for="online">Online</label>
+
+            <p>Talleres de interés:</p>
+
+            <input type="checkbox" id="programación"
+            name="talleres" value="programación">
+            <label for="programación">Programación</label>
+
+            <input type="checkbox" id="redes"
+            name="talleres" value="redes">
+            <label for="redes">Redes</label>
+
+            <input type="checkbox" id="diseño-web"
+            name="talleres" value="diseño-web">
+            <label for="diseño-web">Diseño web</label>
+
+            <p>
+                <label for="sesiones">Numero de sesiones:</label>
+                <input type="range" id="sesiones" name="sesiones"
+                min="1" max="10" value="5">
+            </p>
+
+            <p> 
+                <label for="documento"> Documento de identificación (PDF):</label>
+                <input type="file" id="documento" name="documento"
+                accept=".pdf,application/pdf">
+            </p>
+        </fieldset>
+
+        <fieldset> 
+            <legend>Información adicional</legend>
+
+            <p>
+                <label for="web">Página web personal:</label>
+                <in put type="url" id="web" name="web"
+                placeholder="https://www.ejemplo.com">
+            </p>
+
+            <p>
+                <label for="invitación"> Código de invitación:</label>
+                <input type="text" id="invitación" name="invitacion"
+                pattern="[A-Za-z0-9]{4,8}"
+                minlength="4" maxlength="8">
+            </p>
+
+            <p>
+                <label for="color">Color preferido:</label>
+                <input type="color" id="color" name="color"
+                value="#3366cc">
+            </p>
+
+            <p> 
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios"
+                rows="4" cols="40"
+                maxlength="300"></textarea>
+            </p>
+        </fieldset>
+
+        <input type="hidden" name="campana"
+        value="TALLER-TECNOLOGICO-2027">
+
+        <p>
+            <input type="button" value="Botón de prueba">
+            <input type="submit" value="Enviar inscripción">
+            <input type="reset" value="Borrar formulario">
+        </p>
+        
+     </form>
+
+     
+    </body>
+ </html>
