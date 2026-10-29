@@ -1,0 +1,47 @@
+/* ESTADO POR DEFECTO */
+input:not([type="hidden"]):not([type="button"]):not([type="submit"]):not([type="reset"]),
+textarea,
+select {
+    background-color: #eeeeee;
+    color: #222222;
+    border: none;
+}
+
+/* CAMPOS OBLIGATORIOS */
+input:required,
+textarea:required,
+select:required {
+    background-color: #e7f1ff;
+}
+
+/* CAMPOS VÁLIDOS */
+input:valid,
+textarea:valid,
+select:valid {
+    background-color: #d9f7d9;
+    color: #145214;
+}
+
+/* CAMPOS NO VÁLIDOS */
+input:invalid,
+textarea:invalid,
+select:invalid {
+    background-color: #ffdede;
+    color: #8b0000;
+}
+
+/* CAMPO CON EL FOCO */
+input:focus,
+textarea:focus,
+select:focus {
+    border: 2px solid #1769d2;
+    outline: none;
+    color: #123f78;
+}
+
+/* GRUPOS DEL FORMULARIO */
+fieldset {
+    border: 1px solid #999999;
+    border-radius: 6px;
+    font-size: 1.1em;
+}
