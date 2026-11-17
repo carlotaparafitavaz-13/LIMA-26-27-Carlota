@@ -11,6 +11,7 @@ body {
     margin: 0;
     background: linear-gradient(135deg, #7775c9 0%, #bd83c2 48%, #75a9d4 100%);
     color: var(--violeta-oscuro);
+    
 }
 
 article {
@@ -18,7 +19,8 @@ article {
 }
 
 header {
-7}
+
+}
 
 h1 {
 
