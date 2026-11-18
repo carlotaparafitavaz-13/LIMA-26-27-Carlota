@@ -1,140 +1,215 @@
-:root {
-    --violeta-oscuro: rgb(54, 43, 91);
-    --gris: rgb(112, 119, 135);
-    --violeta-claro: rgb(195, 177, 235);
-    --borde: 2px solid rgba(145, 124, 190, 0.45);
-
-    font-size: 0.8em;
-}
+/* ESTILOS GENERALES */
 
 * {
     box-sizing: border-box;
 }
 
+/* VARIABLES DE COLOR */
+
+:root {
+    /* Colores generales */
+    --color-texto: white;
+    --color-texto-secundario: #d9c9ed;
+
+    /* Fondos oscuros */
+    --color-fondo-cartel: rgba(20, 24, 55, 0.78);
+    --color-fondo-pie: #202548;
+    --color-fondo-artista: rgba(0, 0, 0, 0.75);
+
+    /* Portada */
+    --color-portada-superior: rgba(20, 15, 55, 0.25);
+    --color-portada-inferior: rgba(20, 15, 55, 0.85);
+    --color-borde-portada: rgba(255, 255, 255, 0.5);
+    --color-fecha: rgba(220, 170, 230, 0.25);
+
+    /* Presentación */
+    --color-presentacion-inicio: #594a9b;
+    --color-presentacion-medio: #a65eae;
+    --color-presentacion-final: #d77cae;
+
+    /* Artistas */
+    --color-borde-artista: rgba(0, 0, 0, 0.7);
+
+    /* Información */
+    --color-texto-informacion: #292e5b;
+    --color-fondo-informacion: #eee7f5;
+    --color-titulo-dato: #875a9c;
+
+    /* Sombras */
+    --color-sombra: #333;
+    --color-sombra-artistas: black;
+}
+
 body {
-    min-height: 100vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    background: linear-gradient(135deg, #7775c9 0%, #bd83c2 48%, #75a9d4 100%);
-    color: var(--violeta-oscuro);
+
+height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+background-image: url(img/fondo.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
 }
 
-article {
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255, 0.7);
-    height: 600px;
-    width: 700px;
-    padding: 1.5em;
-    margin: 0 auto;
-    margin-top: calc(calc(100vh - 600px) / 2);
+/* CARTEL PRINCIPAL */
+
+.cartel {
+    height: 1000px;
+    width: 750px;
+    max-width: 100%;
+background-color: red;
+margin: 0 auto;
+margin-top: calc(calc(100vh - 1000px)/2);
+box-shadow: 0px 50px 8em var(--color-presentacion-inicio);
+border-radius: 1.5em;
 }
 
-header {
-    text-align: right;
-    border-bottom: var(--borde);
-    padding-bottom: 1em;
+/* PORTADA */
+
+.portada {
+    background-image: url(img/escenario.jpg);
+background-attachment: scroll;
+background-size: contain;
+    text-align: center;
+height: 450px;
+border-radius: 1em 1em 0 0;
 }
 
-h1 {
-    font-size: 1.8rem;
-    color: var(--violeta-oscuro);
-    margin: 0;
+.portada-contenido {
+padding: 2em 8em;
+    border: 2px solid var(--color-borde-portada);
+display: inline-block;
+margin-top: calc(calc(450px - 225px)/2);
+
+}
+
+.etiqueta {
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+.portada h1 {
+
+font-size: 3em;
+    letter-spacing: 10px;
+}
+
+.subtitulo {
+
 }
 
 .fecha {
-    font-size: 0.9rem;
-    color: var(--gris);
+
+
+
+    letter-spacing: 3px;
+
+
 }
 
-.tiempo-actual {
-    padding-left: 2em;
-    margin: 2em 0;
+/* PRESENTACIÓN */
+
+.presentacion {
+background: linear-gradient(to right, var(--color-presentacion-inicio), var(--color-presentacion-medio), var(--color-presentacion-final));
+    text-align: center;
+    padding: 1em 3em;
 }
 
-.temperatura {
-    text-align: left;
-    color: var(--violeta-oscuro);
-    display: inline-block;
+.presentacion h2 {
+    font-size: 1.5em;
 }
 
-.valor {
-    font-size: 10rem;
-    display: inline;
-    font-weight: bold;
-    padding-right: 0.8em;
+.presentacion p {
+    font-size: 0.8em;
+    line-height: 1.7;
+    padding: 0 10em;
 }
 
-.estado {
-    font-size: 1.1rem;
+/* ARTISTAS */
+
+.artistas {
+background-image: url(img/patron.jpg);
+background-size: cover;
+background-attachment: scroll;
+padding: 3em;
+margin: 0;
 }
 
-.imagen-tiempo {
-    display: inline-block;
-}
-
-.imagen-tiempo img {
-    height: 250px;
-}
-
-.detalles {
-    color: var(--gris);
-    font-size: 0.9rem;
-}
-
-.detalles p {
-    color: var(--violeta-claro);
-}
-
-.detalles strong {
-    color: var(--violeta-oscuro);
-}
-
-.prevision {
-    color: var(--violeta-oscuro);
-}
-
-.prevision h2 {
-    padding-bottom: 0.8rem;
-    border-bottom: var(--borde);
-    font-size: 1.3rem;
-}
-
-.capsula {
-    background-color: var(--violeta-oscuro);
-    border-radius: 5px;
-    padding: 2px;
-}
-
-table {
-    margin: 0 auto;
-    border-collapse: collapse;
-}
-
-th {
-    color: white;
-}
-
-td {
-    padding: 5px 2.2rem;
+.artistas h2 {
+    letter-spacing: 4px;
     text-align: center;
 }
 
-td:not(:last-child),
-th:not(:last-child) {
-    border-right: var(--borde);
+.lista-artistas {
+text-align: center;
 }
 
-.iconos img {
-    height: 35px;
+.artista {
+background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+font-size: 0.8em;
+width: 32%;
 }
 
-.maximas {
-    font-size: 1rem;
-    color: var(--violeta-oscuro);
+.artista h3 {
+
+}
+
+.artista p {
+
+}
+
+/* INFORMACIÓN */
+
+.informacion {
+background-color: var(--color-fondo-informacion);
+margin: 0;
+padding: 2em;
+}
+
+.informacion h2 {
+    margin: 0;
+    letter-spacing: 3px;
+    text-align: center;
+    color: var(--color-texto-informacion);
+    font-size: 1.5em;
     font-weight: bold;
 }
 
-.minimas {
-    font-size: 0.9rem;
-    color: var(--gris);
+.datos {
+
+text-align: center
+}
+
+.dato {
+display: inline-block;
+font-size: 0.8em;
+width: 32%;
+border-radius: 10px;
+}
+
+.dato h3 {
+    color: var(--color-titulo-dato);
+}
+
+.dato p {
+color: var(--color-texto-informacion);
+}
+
+/* PIE */
+
+.pie {
+background-color: var(--color-fondo-pie);
+background-image: url(img/nota-musical.png);
+background-size: 2.5em;
+background-repeat: no-repeat;
+background-position: 670px 0 ;
+border-radius: 0 0 1em 1em;
+padding: 0.2em 1em;
+margin: 0;
+}
+
+.pie p {
+text-align: center;
+    letter-spacing: 2px;
 }
